@@ -4,6 +4,20 @@
 <title>Title of the document</title>
 </head>
 
+ <script>
+window.watsonAssistantChatOptions = {​​
+integrationID: "7b052da9-a459-4fb6-8e4a-f886c7714c4f", // The ID of this integration.
+region: "us-east", // The region your integration is hosted in.
+serviceInstanceID: "1a8a42b7-ddd6-49fb-8db4-a18a25c81cac", // The ID of your service instance.
+onLoad: function(instance) {​​ instance.render(); }​​
+}​​;
+setTimeout(function(){​​
+const t=document.createElement('script');
+t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+document.head.appendChild(t);
+}​​);
+</script>
+  
 <body>
 The content of the document......
 </body>
